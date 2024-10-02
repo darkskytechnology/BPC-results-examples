@@ -1,3 +1,7 @@
+# Project source
+
+https://github.com/yaml/libyaml
+
 # Project build steps
 
 coming soon

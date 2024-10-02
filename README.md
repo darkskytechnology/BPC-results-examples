@@ -7,8 +7,8 @@ Welcome to the Bulletproof Code (BPC) translation example repository. This repos
 As seen below, each project directory is organized as follows:
 ![image](https://github.com/user-attachments/assets/9d509c1c-9296-4453-ba93-de171981f156)
 
-- **c/** or **c.tgz**:  
-  This directory (or tarball) contains the original C code for the translation. If the original project is an embedded Git repository, the directory is compressed into a `.tgz` file to avoid nesting Git repositories.
+- **c/**:  
+  This directory (or tarball) contains the original C code for the translation if the original project is not an established Git repository. The URL is listed in the notes.MD for each project if it is an established Git repository.  
 
 - **rust.tgz**:  
   This tarball contains the Rust code that BPC generated from the original C code.

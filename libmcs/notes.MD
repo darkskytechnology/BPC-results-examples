@@ -1,3 +1,7 @@
+# Project source
+
+https://gitlab.com/gtd-gmbh/libmcs
+
 # Project build steps
 
 ```

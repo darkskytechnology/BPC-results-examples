@@ -1,3 +1,7 @@
+# Project source
+
+https://savannah.gnu.org/git/?group=gzip
+
 # Project build steps
 
 ```
