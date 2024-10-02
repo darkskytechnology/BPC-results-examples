@@ -5,6 +5,10 @@ bpc-translate generate-replacement --cc-override $(pwd)/bpc-gcc $(pwd)/libmcs.to
 make
 ```
 
+## Build file
+
+[libmcs.toml(libmcs.toml)
+
 # Translation steps
 
 ```
@@ -13,7 +17,7 @@ time ./bpc-translate translate -m /tmp/lifted -o /tmp/libmcs -a /tmp/libmcs-arti
 
 # Results analysis and suggestions
 
-poor translation - more details coming soon
+First pass seems to be a poor translation. Some files are correct but many are way off. I'll explore to see where the issues are.
 
 
 
