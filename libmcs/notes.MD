@@ -7,7 +7,7 @@ make
 
 ## Build file
 
-[libmcs.toml(libmcs.toml)
+[libmcs.toml](libmcs.toml)
 
 # Translation steps
 
