@@ -13,7 +13,7 @@ bpc-translate generate-replacement --cc-override $(pwd)/bpc-gcc $(pwd)/cFS.toml 
 
 ## Build file
 
-coming soon
+[cFS.toml](cFS.toml)
 
 # Translation steps
 
