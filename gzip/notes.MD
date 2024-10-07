@@ -17,10 +17,10 @@ make
 # Translation steps
 
 ```
-time ./bpc-translate translate -m /tmp/lifted -o /tmp/gzip -a /tmp/gzip-artifacts.zip  --model openai /home/coder/Documents/GitHub/gzip
+time bpc-translate translate -m /tmp/lifted -o /tmp/gzip -a /tmp/gzip-artifacts.zip  --model openai /home/coder/Documents/GitHub/gzip/gzip.toml
 ```
 
-Currently troubleshooting this error: Failed to build source context from path `/home/coder/Documents/GitHub/gzip`. There is no `src/` directory like we expect. All the source is dumped into the top-level directory. 
+coming soon
 
 # Results analysis and suggestions
 
