@@ -24,7 +24,18 @@ coming soon
 
 # Results analysis and suggestions
 
-details coming soon
+Currently failing because several files have dashes in their names which is failing when used as module names:
+
+```
+error: expected one of `;` or `{`, found `-`
+ --> /home/ubuntu/translations/gzip/src/gnulib/lib/mod.rs:1:12
+  |
+1 | pub mod arg-nonnull_h;
+  |            ^ expected one of `;` or `{`
+
+```
+
+I've opened an issue for this and will try just doing a blanket rename of the C code for now to bump past it.
 
 
 
