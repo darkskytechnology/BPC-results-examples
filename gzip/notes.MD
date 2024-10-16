@@ -17,7 +17,7 @@ make
 # Translation steps
 
 ```
-time bpc-translate translate -m /tmp/lifted -o /tmp/gzip -a /tmp/gzip-artifacts.zip  --model openai /home/coder/Documents/GitHub/gzip/gzip.toml
+bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translations/gzip -a /home/ubuntu/artifacts/gzip-artifacts.zip --model openai /home/ubuntu/targets/gzip/gzip.toml 
 ```
 
 coming soon
