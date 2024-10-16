@@ -21,7 +21,6 @@ bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translati
 
 # Results analysis and suggestions
 
-First pass seems to be a poor translation. Some files are correct but many are way off. I'll explore to see where the issues are.
-
+[libmcs-rust.tgz](libmcs-rust.tgz)
 
 
