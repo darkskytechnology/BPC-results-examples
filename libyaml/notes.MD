@@ -4,11 +4,14 @@ https://github.com/yaml/libyaml
 
 # Project build steps
 
-coming soon
+```
+bpc-translate generate-replacement --ignore --cc-override $(pwd)/bpc-gcc $(pwd)/libyaml.toml /usr/bin/gcc $(pwd) -- ./configure
+make -C src
+```
 
 ## Build file
 
-coming soon
+[libyaml.toml](libyaml.toml)
 
 # Translation steps
 
