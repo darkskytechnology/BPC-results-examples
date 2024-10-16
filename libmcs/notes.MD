@@ -16,7 +16,7 @@ make
 # Translation steps
 
 ```
-time ./bpc-translate translate -m /tmp/lifted -o /tmp/libmcs -a /tmp/libmcs-artifacts.zip  --model openai /home/coder/Documents/GitHub/libmcs
+bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translations/libmcs -a /home/ubuntu/artifacts/libmcs-artifacts.zip --model openai /home/ubuntu/targets/libmcs/libmcs.toml
 ```
 
 # Results analysis and suggestions
