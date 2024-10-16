@@ -1,136 +1,60 @@
-root = "/home/coder/Documents/GitHub/gzip"
+root = "/home/ubuntu/targets/gzip"
 compiler = "/usr/bin/gcc"
 ignores = []
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/pipe-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/timespec.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/pipe-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/timespec.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/time.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/utimens.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/time.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/time.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/utimens.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/utimens.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lib/sys/stat.h",
+    "/home/ubuntu/targets/gzip/lib/sys/time.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/utime.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.h",
+    "/home/ubuntu/targets/gzip/lib/stdckdint.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/ialloc.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/unistd.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/ialloc.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/ialloc.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/creat-safer.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/creat-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/types.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexp.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexp.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexp.h",
-    "/home/coder/Documents/GitHub/gzip/lib/float.h",
-    "/home/coder/Documents/GitHub/gzip/lib/math.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/timespec.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/timespec.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/timespec.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/arg-nonnull.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/freading.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/freading.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/freading.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stdio-impl.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/cloexec.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/cloexec.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/cloexec.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseterr.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseterr.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseterr.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stdio-impl.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/unlzw.c"
+source = "/home/ubuntu/targets/gzip/trees.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -138,20 +62,131 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/unlzw.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lzw.h",
+    "/home/ubuntu/targets/gzip/trees.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/bits.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/gettime.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/gettime.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/lib/sys/time.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/xmalloc.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/xmalloc.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/minmax.h",
+    "/home/ubuntu/targets/gzip/lib/stdckdint.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/wchar.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xsize.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/attribute.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fpurge.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/fpurge.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/malloca.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/malloca.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/malloca.h",
+    "/home/ubuntu/targets/gzip/lib/alloca.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc-oversized.h",
+    "/home/ubuntu/targets/gzip/lib/stdckdint.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/version.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -159,17 +194,36 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/bits.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/version.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/version.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/util.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/save-cwd.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/save-cwd.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/save-cwd.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/pathmax.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd--.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl--.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/unzip.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -177,306 +231,214 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/util.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/crc.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirname.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
+    "/home/ubuntu/targets/gzip/unzip.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/pathmax.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/assure.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/verify.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseeko.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseeko.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/dup-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dup-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/version.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/version.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/version.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/chdir-long.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/chdir-long.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/chdir-long.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/pathmax.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/assure.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/verify.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/alloca.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lib/wchar.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lib/float.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xsize.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/attribute.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/exitfail.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer-flag.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/exitfail.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/exitfail.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer-flag.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/savedir.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fseek.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/savedir.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/savedir.h",
-    "/home/coder/Documents/GitHub/gzip/lib/dirent.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirent--.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirent-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/attribute.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fseek.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fflush.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fclose.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fflush.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/freading.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fclose.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/freading.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/stripslash.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/crc.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stripslash.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirname.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/crc.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/crc.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/mbszero.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/openat-proc.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/mbszero.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/wchar.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat-proc.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat-priv.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/sys/stat.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-args.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/asnprintf.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-args.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-args.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/wchar.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/asnprintf.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-proc.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/savedir.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-proc.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-priv.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/stat.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/savedir.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/savedir.h",
+    "/home/ubuntu/targets/gzip/lib/dirent.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirent--.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirent-safer.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/attribute.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-die.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-die.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/stat.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/error.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/exitfail.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/gettext.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/math.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/math.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/math.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/filenamecat-lgpl.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filenamecat-lgpl.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filenamecat.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/gettime.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/gettime.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/timespec.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/arg-nonnull.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/time.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/unpack.c"
+source = "/home/ubuntu/targets/gzip/unpack.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -484,17 +446,80 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/unpack.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/unpack.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/zip.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/xsize.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/xsize.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xsize.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/attribute.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/vfzprintf.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/vfzprintf.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat-lgpl.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat-lgpl.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/util.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -502,303 +527,94 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/zip.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/util.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/crc.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/math.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/math.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/math.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirname-lgpl.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer-flag.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirname-lgpl.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirname.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer-flag.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-hook.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/openat-die.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-hook.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-hook.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat-die.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/sys/stat.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/error.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/gettext.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/unzip.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/unzip.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/yesno.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/xalloc-die.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/yesno.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/yesno.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc-die.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
+    "/home/ubuntu/targets/gzip/lib/error.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/gettext.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexpl.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexpl.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexp.c",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-frexpl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/float.h",
-    "/home/coder/Documents/GitHub/gzip/lib/math.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fpucw.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/getprogname.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/getprogname.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-parse.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-parse.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-parse.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-args.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/wchar.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xsize.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/attribute.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/xmalloc.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xmalloc.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/ialloc.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/minmax.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdckdint.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc-die.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc-die.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
-    "/home/coder/Documents/GitHub/gzip/lib/error.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/exitfail.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/gettext.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/opendir-safer.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/opendir-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirent-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/dirent.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/float.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/float.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/float.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/stat-time.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stat-time.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stat-time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdckdint.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/stat.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/save-cwd.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/save-cwd.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/save-cwd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/chdir-long.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/pathmax.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd--.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl--.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl-safer.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/crc.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/crc.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/crc.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/open-safer.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/open-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/types.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fopen.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fopen.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/stat.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/asnprintf.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/asnprintf.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/vasnprintf.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/unlzh.c"
+source = "/home/ubuntu/targets/gzip/unlzh.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -806,131 +622,64 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/unlzh.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lzw.h",
+    "/home/ubuntu/targets/gzip/unlzh.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lzw.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/vfzprintf.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/dirname-lgpl.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/vfzprintf.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseterr.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/vasnprintf.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirname-lgpl.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/utimens.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/utimens.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/utimens.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/stat.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/lib/utime.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stat-time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdckdint.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/timespec.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.h",
+    "/home/ubuntu/targets/gzip/lib/stdckdint.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/sys/stat.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/vasnprintf.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/float.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/vasnprintf.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/alloca.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/vasnprintf.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lib/wchar.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lib/float.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-parse.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/printf-args.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xsize.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/attribute.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/float.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/float.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/dup-safer-flag.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dup-safer-flag.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/xsize.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xsize.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xsize.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/attribute.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/vfprintf.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/vfprintf.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseterr.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gzip.c"
+source = "/home/ubuntu/targets/gzip/zip.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -938,45 +687,92 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gzip.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/types.h",
-    "/home/coder/Documents/GitHub/gzip/lib/signal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/stat.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lzw.h",
-    "/home/coder/Documents/GitHub/gzip/revision.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/timespec.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/arg-nonnull.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/dirname.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/basename-lgpl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl--.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl-safer.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/filename.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/ignore-value.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stat-time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdckdint.h",
-    "/home/coder/Documents/GitHub/gzip/version.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/yesno.h",
-    "/home/coder/Documents/GitHub/gzip/lib/inttypes.h",
-    "/home/coder/Documents/GitHub/gzip/lib/dirent.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/savedir.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/utimens.h",
+    "/home/ubuntu/targets/gzip/zip.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/trees.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/opendir-safer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/opendir-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirent-safer.h",
+    "/home/ubuntu/targets/gzip/lib/dirent.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/creat-safer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/creat-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/lib/sys/types.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexpl.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexpl.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexpl.h",
+    "/home/ubuntu/targets/gzip/lib/float.h",
+    "/home/ubuntu/targets/gzip/lib/math.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fpucw.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/time.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/time.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/sys/time.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/openat-safer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/lib/sys/types.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/unlzw.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -984,134 +780,34 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/trees.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/unlzw.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lzw.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/sig-handler.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fseeko.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/sig-handler.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/sig-handler.h",
-    "/home/coder/Documents/GitHub/gzip/lib/signal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fseeko.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fclose.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fclose.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/freading.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fpurge.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fpurge.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/stdio-impl.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-safer.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/openat-safer.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fcntl-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/sys/types.h",
-    "/home/coder/Documents/GitHub/gzip/lib/fcntl.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseek.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseek.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/malloca.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/malloca.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/malloca.h",
-    "/home/coder/Documents/GitHub/gzip/lib/alloca.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stddef.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/xalloc-oversized.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdckdint.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/idx.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-safer-flag.c"
-args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-]
-depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fd-safer-flag.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/unistd-safer.h",
-    "/home/coder/Documents/GitHub/gzip/lib/unistd.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/gzip/inflate.c"
+source = "/home/ubuntu/targets/gzip/bits.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -1119,18 +815,17 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/inflate.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdlib.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/bits.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/deflate.c"
+source = "/home/ubuntu/targets/gzip/inflate.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
@@ -1138,30 +833,291 @@ args = [
     "-I./lib",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/deflate.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/deflate.h",
-    "/home/coder/Documents/GitHub/gzip/tailor.h",
-    "/home/coder/Documents/GitHub/gzip/gzip.h",
-    "/home/coder/Documents/GitHub/gzip/lib/time.h",
-    "/home/coder/Documents/GitHub/gzip/lib/string.h",
-    "/home/coder/Documents/GitHub/gzip/lzw.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/verify.h",
+    "/home/ubuntu/targets/gzip/inflate.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/gzip/gnulib/lib/fprintf.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/pipe-safer.c"
 args = [
     "-DHAVE_CONFIG_H",
     "-I.",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fprintf.c",
-    "/home/coder/Documents/GitHub/gzip/lib/config.h",
-    "/home/coder/Documents/GitHub/gzip/lib/stdio.h",
-    "/home/coder/Documents/GitHub/gzip/lib/limits.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/fseterr.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops.h",
-    "/home/coder/Documents/GitHub/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/pipe-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/mbszero.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/mbszero.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/wchar.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gzip.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I./lib",
+    "-I./lib",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gzip.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/sys/types.h",
+    "/home/ubuntu/targets/gzip/lib/signal.h",
+    "/home/ubuntu/targets/gzip/lib/sys/stat.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lzw.h",
+    "/home/ubuntu/targets/gzip/revision.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl--.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/ignore-value.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.h",
+    "/home/ubuntu/targets/gzip/lib/stdckdint.h",
+    "/home/ubuntu/targets/gzip/version.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/yesno.h",
+    "/home/ubuntu/targets/gzip/lib/inttypes.h",
+    "/home/ubuntu/targets/gzip/lib/dirent.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/savedir.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/utimens.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.h",
+    "/home/ubuntu/targets/gzip/lib/float.h",
+    "/home/ubuntu/targets/gzip/lib/math.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/open-safer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/open-safer.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/lib/sys/types.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fopen.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/fopen.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/lib/sys/stat.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/getprogname.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/getprogname.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/freading.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/freading.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/freading.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/yesno.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/yesno.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/yesno.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fd-hook.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd-hook.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd-hook.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/sig-handler.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/sig-handler.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/sig-handler.h",
+    "/home/ubuntu/targets/gzip/lib/signal.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fcntl.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fflush.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/fflush.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/freading.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/stripslash.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/stripslash.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
+    "/home/ubuntu/targets/gzip/lib/stdlib.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.h",
+    "/home/ubuntu/targets/gzip/lib/stddef.h",
+    "/home/ubuntu/targets/gzip/lib/wchar.h",
+    "/home/ubuntu/targets/gzip/lib/limits.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/deflate.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I./lib",
+    "-I./lib",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/deflate.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/lib/stdio.h",
+    "/home/ubuntu/targets/gzip/deflate.h",
+    "/home/ubuntu/targets/gzip/tailor.h",
+    "/home/ubuntu/targets/gzip/gzip.h",
+    "/home/ubuntu/targets/gzip/lib/time.h",
+    "/home/ubuntu/targets/gzip/lib/string.h",
+    "/home/ubuntu/targets/gzip/lzw.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/verify.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/gzip/gnulib/lib/cloexec.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+]
+depends = [
+    "/home/ubuntu/targets/gzip/gnulib/lib/cloexec.c",
+    "/home/ubuntu/targets/gzip/lib/config.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/cloexec.h",
+    "/home/ubuntu/targets/gzip/lib/fcntl.h",
+    "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
