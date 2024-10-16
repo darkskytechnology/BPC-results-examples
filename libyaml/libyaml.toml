@@ -1,0 +1,123 @@
+root = "/home/ubuntu/targets/libyaml"
+compiler = "/usr/bin/gcc"
+ignores = []
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/parser.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/parser.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/scanner.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/scanner.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/emitter.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/emitter.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/dumper.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/dumper.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/loader.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/loader.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/api.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/api.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/writer.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/writer.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/libyaml/src/reader.c"
+args = [
+    "-DHAVE_CONFIG_H",
+    "-I.",
+    "-I../include",
+    "-I../include",
+]
+depends = [
+    "/home/ubuntu/targets/libyaml/src/reader.c",
+    "/home/ubuntu/targets/libyaml/src/yaml_private.h",
+    "/home/ubuntu/targets/libyaml/include/config.h",
+    "/home/ubuntu/targets/libyaml/include/yaml.h",
+]
