@@ -5,22 +5,22 @@ ignores = []
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/timespec.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/timespec.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
     "/home/ubuntu/targets/gzip/lib/time.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg_nonnull.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/utimens.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/utimens.c",
@@ -33,19 +33,19 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/sys/time.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
     "/home/ubuntu/targets/gzip/lib/utime.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat_time.h",
     "/home/ubuntu/targets/gzip/lib/stdckdint.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg_nonnull.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/unistd.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/unistd.c",
@@ -56,10 +56,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/trees.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/trees.c",
@@ -74,36 +74,36 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/gettime.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/gettime.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
     "/home/ubuntu/targets/gzip/lib/time.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg_nonnull.h",
     "/home/ubuntu/targets/gzip/lib/sys/time.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fd_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/xmalloc.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/xmalloc.c",
@@ -115,21 +115,21 @@ depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/minmax.h",
     "/home/ubuntu/targets/gzip/lib/stdckdint.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf_parse.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_parse.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_parse.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_args.h",
     "/home/ubuntu/targets/gzip/lib/stddef.h",
     "/home/ubuntu/targets/gzip/lib/wchar.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
@@ -141,22 +141,22 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fpurge.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fpurge.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/lib/stdio.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio_impl.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/malloca.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/malloca.c",
@@ -165,9 +165,9 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/alloca.h",
     "/home/ubuntu/targets/gzip/lib/stddef.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc-oversized.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc_oversized.h",
     "/home/ubuntu/targets/gzip/lib/stdckdint.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
 ]
@@ -175,8 +175,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/exitfail.c",
@@ -188,10 +188,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/version.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/version.c",
@@ -200,35 +200,35 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/save-cwd.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/save_cwd.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/save-cwd.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/save_cwd.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/save-cwd.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/save_cwd.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
     "/home/ubuntu/targets/gzip/lib/stdio.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/chdir_long.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/pathmax.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd--.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl--.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd__.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl__.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl_safer.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/unzip.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/unzip.c",
@@ -241,15 +241,15 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/chdir_long.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/chdir_long.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/chdir-long.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/chdir_long.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/pathmax.h",
@@ -264,8 +264,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/ialloc.c",
@@ -279,22 +279,22 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.h",
     "/home/ubuntu/targets/gzip/lib/stdio.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio_impl.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.c",
@@ -308,30 +308,30 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/wchar.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/lib/float.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-parse.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_parse.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_args.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/xsize.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/attribute.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer-flag.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fd_safer_flag.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/fd-safer-flag.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd_safer_flag.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fseek.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fseek.c",
@@ -343,8 +343,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fclose.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fclose.c",
@@ -357,8 +357,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/crc.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/crc.c",
@@ -368,30 +368,30 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
     "/home/ubuntu/targets/gzip/lib/stddef.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/openat-proc.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/openat_proc.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/openat-proc.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat_proc.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/openat-priv.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat_priv.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
     "/home/ubuntu/targets/gzip/lib/sys/stat.h",
@@ -400,14 +400,14 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/string.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/intprops.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/asnprintf.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/asnprintf.c",
@@ -420,8 +420,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/savedir.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/savedir.c",
@@ -429,8 +429,8 @@ depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/savedir.h",
     "/home/ubuntu/targets/gzip/lib/dirent.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/dirent--.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/dirent-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirent__.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirent_safer.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/attribute.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
@@ -440,10 +440,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/unpack.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/unpack.c",
@@ -458,8 +458,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/xsize.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/xsize.c",
@@ -473,8 +473,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/vfzprintf.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/vfzprintf.c",
@@ -483,48 +483,48 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/fseterr.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/intprops.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/vasnprintf.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/dup_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dup_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat-lgpl.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat_lgpl.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat-lgpl.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat_lgpl.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filenamecat.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/util.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/util.c",
@@ -541,7 +541,7 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/string.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/idx.h",
 ]
@@ -549,8 +549,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/math.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/math.c",
@@ -559,27 +559,27 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer-flag.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/dup_safer_flag.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/dup-safer-flag.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dup_safer_flag.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/openat-die.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/openat_die.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/openat-die.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat_die.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/openat.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
@@ -594,13 +594,13 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/xalloc-die.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/xalloc_die.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc-die.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/xalloc_die.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
     "/home/ubuntu/targets/gzip/lib/stddef.h",
@@ -616,10 +616,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/unlzh.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/unlzh.c",
@@ -634,33 +634,33 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/dirname-lgpl.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/dirname_lgpl.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/dirname-lgpl.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirname_lgpl.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/stat_time.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat_time.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat_time.h",
     "/home/ubuntu/targets/gzip/lib/stdckdint.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/lib/stddef.h",
     "/home/ubuntu/targets/gzip/lib/sys/stat.h",
@@ -669,8 +669,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/float.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/float.c",
@@ -681,10 +681,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/zip.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/zip.c",
@@ -697,46 +697,46 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/opendir-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/opendir_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/opendir-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/opendir_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/dirent-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/dirent_safer.h",
     "/home/ubuntu/targets/gzip/lib/dirent.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/creat-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/creat_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/creat-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/creat_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl_safer.h",
     "/home/ubuntu/targets/gzip/lib/sys/types.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexpl.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexpl.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexpl.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexpl.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.c",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexp.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexpl.h",
     "/home/ubuntu/targets/gzip/lib/float.h",
     "/home/ubuntu/targets/gzip/lib/math.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/fpucw.h",
@@ -745,8 +745,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/time.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/time.c",
@@ -757,27 +757,27 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/openat-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/openat_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/openat-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/openat_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl_safer.h",
     "/home/ubuntu/targets/gzip/lib/sys/types.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/unlzw.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/unlzw.c",
@@ -795,24 +795,24 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fseeko.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fseeko.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/lib/stdio.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio_impl.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/bits.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/bits.c",
@@ -827,10 +827,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/inflate.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/inflate.c",
@@ -844,23 +844,23 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/pipe-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/pipe_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/pipe-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/pipe_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/mbszero.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/mbszero.c",
@@ -871,10 +871,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gzip.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gzip.c",
@@ -887,22 +887,22 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/stdio.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/intprops.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/intprops-internal.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/intprops_internal.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
     "/home/ubuntu/targets/gzip/lzw.h",
     "/home/ubuntu/targets/gzip/revision.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/timespec.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/arg-nonnull.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/arg_nonnull.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/dirname.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl--.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl__.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl_safer.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/ignore-value.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stat-time.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/ignore_value.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stat_time.h",
     "/home/ubuntu/targets/gzip/lib/stdckdint.h",
     "/home/ubuntu/targets/gzip/version.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/xalloc.h",
@@ -915,39 +915,39 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexp.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexp.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-frexp.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_frexp.h",
     "/home/ubuntu/targets/gzip/lib/float.h",
     "/home/ubuntu/targets/gzip/lib/math.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/open-safer.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/open_safer.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/open-safer.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/open_safer.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fcntl_safer.h",
     "/home/ubuntu/targets/gzip/lib/sys/types.h",
     "/home/ubuntu/targets/gzip/lib/fcntl.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/unistd-safer.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/unistd_safer.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fopen.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fopen.c",
@@ -962,35 +962,35 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/getprogname.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/getprogname.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/freading.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/freading.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/freading.h",
     "/home/ubuntu/targets/gzip/lib/stdio.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio_impl.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/yesno.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/yesno.c",
@@ -1001,36 +1001,36 @@ depends = [
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/fd-hook.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/fd_hook.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/fd-hook.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd_hook.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/fd-hook.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/fd_hook.h",
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/sig-handler.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/sig_handler.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/sig-handler.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/sig_handler.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/sig-handler.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/sig_handler.h",
     "/home/ubuntu/targets/gzip/lib/signal.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fcntl.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fcntl.c",
@@ -1044,8 +1044,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/fflush.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/fflush.c",
@@ -1053,14 +1053,14 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/stdio.h",
     "/home/ubuntu/targets/gzip/lib/unistd.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/freading.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/stdio-impl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/stdio_impl.h",
 ]
 
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/stripslash.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/stripslash.c",
@@ -1069,19 +1069,19 @@ depends = [
     "/home/ubuntu/targets/gzip/lib/stdlib.h",
     "/home/ubuntu/targets/gzip/gnulib/lib/filename.h",
     "/home/ubuntu/targets/gzip/lib/string.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/basename-lgpl.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/basename_lgpl.h",
 ]
 
 [[files]]
-source = "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.c"
+source = "/home/ubuntu/targets/gzip/gnulib/lib/printf_args.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.c",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_args.c",
     "/home/ubuntu/targets/gzip/lib/config.h",
-    "/home/ubuntu/targets/gzip/gnulib/lib/printf-args.h",
+    "/home/ubuntu/targets/gzip/gnulib/lib/printf_args.h",
     "/home/ubuntu/targets/gzip/lib/stddef.h",
     "/home/ubuntu/targets/gzip/lib/wchar.h",
     "/home/ubuntu/targets/gzip/lib/limits.h",
@@ -1090,10 +1090,10 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/deflate.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
-    "-I./lib",
-    "-I./lib",
+    "_DHAVE_CONFIG_H",
+    "_I.",
+    "_I./lib",
+    "_I./lib",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/deflate.c",
@@ -1111,8 +1111,8 @@ depends = [
 [[files]]
 source = "/home/ubuntu/targets/gzip/gnulib/lib/cloexec.c"
 args = [
-    "-DHAVE_CONFIG_H",
-    "-I.",
+    "_DHAVE_CONFIG_H",
+    "_I.",
 ]
 depends = [
     "/home/ubuntu/targets/gzip/gnulib/lib/cloexec.c",
