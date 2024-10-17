@@ -13,12 +13,13 @@ make
 
 ## Build file
 
-coming soon
+[bind9.toml](bind9.toml)
+
 
 # Translation steps
 
 ```
-time ./bpc-translate translate -m /tmp/lifted -o /tmp/bind9 -a /tmp/bind9-artifacts.zip  --model openai /home/coder/Documents/GitHub/bind9
+bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translations/bind9 -a /home/ubuntu/artifacts/bind9-artifacts.zip --model openai /home/ubuntu/targets/bind9/bind9.toml 
 ```
 
 # Results analysis and suggestions
