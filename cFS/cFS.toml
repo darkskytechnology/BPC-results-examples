@@ -1,248 +1,248 @@
-root = "/home/coder/Documents/GitHub/cFS"
+root = "/home/ubuntu/targets/cFS"
 compiler = "/usr/bin/gcc"
 ignores = []
 
 [[files]]
-source = "/home/coder/Documents/GitHub/cFS/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c"
-args = []
-depends = ["/home/coder/Documents/GitHub/cFS/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c"]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.c"
-args = [
-    "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/osal/src/os/inc",
-    "-I/home/coder/Documents/GitHub/cFS/psp/fsw/inc",
-]
-depends = [
-    "/home/coder/Documents/GitHub/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.c",
-    "/home/coder/Documents/GitHub/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/cFS/tools/elf2cfetbl/elf2cfetbl.c"
-args = [
-    "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/osal/src/os/inc",
-    "-I/home/coder/Documents/GitHub/cFS/psp/fsw/inc",
-]
-depends = [
-    "/home/coder/Documents/GitHub/cFS/tools/elf2cfetbl/elf2cfetbl.c",
-    "/home/coder/Documents/GitHub/cFS/tools/elf2cfetbl/ELF_Structures.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/fsw/inc/cfe_tbl_filedef.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/config/default_cfe_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_core_api_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/config/default_cfe_core_api_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_evs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_evs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_sb_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_sb_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_time_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_time_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/osal/src/os/inc/common_types.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_resourceid_typedef.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/resourceid/option_inc/cfe_resourceid_simple.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_filedef.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_filedef.h",
-    "/home/coder/Documents/GitHub/cFS/tools/elf2cfetbl/elf2cfetbl_version.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/cFS/build/src/cfe_configid_nametable.c"
-args = [
-    "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/../fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool",
-]
-depends = [
-    "/home/coder/Documents/GitHub/cFS/build/src/cfe_configid_nametable.c",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_configid_offset.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/fsw/inc/cfe_config_nametable.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/cFS/tools/tblCRCTool/cfe_ts_crc.c"
-args = [
-    "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/osal/src/os/inc",
-    "-I/home/coder/Documents/GitHub/cFS/psp/fsw/inc",
-    "-I/src/inc",
-]
-depends = [
-    "/home/coder/Documents/GitHub/cFS/tools/tblCRCTool/cfe_ts_crc.c",
-    "/home/coder/Documents/GitHub/cFS/tools/tblCRCTool/cfe_ts_crc_version.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/fsw/inc/cfe_version.h",
-    "/home/coder/Documents/GitHub/cFS/osal/src/os/inc/common_types.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/config/default_cfe_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_core_api_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/config/default_cfe_core_api_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_evs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_evs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_sb_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_sb_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_time_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_time_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_fs_filedef.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/fs/config/default_cfe_fs_filedef.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_extern_typedefs.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_resourceid_typedef.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/resourceid/option_inc/cfe_resourceid_simple.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.c"
-args = [
-    "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/../fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool",
-]
-depends = [
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.c",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_configid_offset.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/fsw/inc/cfe_config_nametable.h",
-]
-
-[[files]]
-source = "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_table.c"
+source = "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_table.c"
 args = [
     "-DMAP_ENTRY_LIST=CFECONFIG_PLATFORMDATA_i686_linux_gnu_default_cpu1",
     "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/../fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool/../fsw/inc",
+    "-I/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_table.c",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_configid_offset.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_private/config/default_cfe_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_core_private_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/core_private/config/default_cfe_core_private_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_es_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_es_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_es_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/es/config/default_cfe_es_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_evs_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_evs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_evs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_evs_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/evs/config/default_cfe_evs_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_sb_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_sb_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_sb_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_sb_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/sb/config/default_cfe_sb_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_tbl_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_tbl_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_tbl_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/tbl/config/default_cfe_tbl_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_time_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_platform_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_time_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_time_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_time_internal_cfg.h",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/time/config/default_cfe_time_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_table.c",
+    "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_configid_offset.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_private/config/default_cfe_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_core_private_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_private/config/default_cfe_core_private_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_es_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_es_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_evs_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_evs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_evs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_evs_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_sb_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_sb_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_sb_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_sb_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_tbl_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_tbl_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_time_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_platform_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_time_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_time_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/i686-linux-gnu/default_cpu1/inc/cfe_time_internal_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_internal_cfg.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/cFS/build/src/cfe_platform_list.c"
+source = "/home/ubuntu/targets/cFS/build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c"
+args = []
+depends = ["/home/ubuntu/targets/cFS/build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c"]
+
+[[files]]
+source = "/home/ubuntu/targets/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/cmdUtil.c"
 args = [
     "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/../fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/core_api/fsw/inc",
+    "-I/home/ubuntu/targets/cFS/osal/src/os/inc",
+    "-I/home/ubuntu/targets/cFS/psp/fsw/inc",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/cFS/build/src/cfe_platform_list.c",
-    "/home/coder/Documents/GitHub/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.h",
-    "/home/coder/Documents/GitHub/cFS/build/inc/cfe_configid_offset.h",
+    "/home/ubuntu/targets/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/cmdUtil.c",
+    "/home/ubuntu/targets/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.h",
 ]
 
 [[files]]
-source = "/home/coder/Documents/GitHub/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/cmdUtil.c"
+source = "/home/ubuntu/targets/cFS/tools/elf2cfetbl/elf2cfetbl.c"
 args = [
     "-D_XOPEN_SOURCE=600",
-    "-I/home/coder/Documents/GitHub/cFS/build/inc",
-    "-I/home/coder/Documents/GitHub/cFS/cfe/modules/core_api/fsw/inc",
-    "-I/home/coder/Documents/GitHub/cFS/osal/src/os/inc",
-    "-I/home/coder/Documents/GitHub/cFS/psp/fsw/inc",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/core_api/fsw/inc",
+    "-I/home/ubuntu/targets/cFS/osal/src/os/inc",
+    "-I/home/ubuntu/targets/cFS/psp/fsw/inc",
 ]
 depends = [
-    "/home/coder/Documents/GitHub/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/cmdUtil.c",
-    "/home/coder/Documents/GitHub/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.h",
+    "/home/ubuntu/targets/cFS/tools/elf2cfetbl/elf2cfetbl.c",
+    "/home/ubuntu/targets/cFS/tools/elf2cfetbl/ELF_Structures.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_api/fsw/inc/cfe_tbl_filedef.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_api/config/default_cfe_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_core_api_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_api/config/default_cfe_core_api_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_evs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_evs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_sb_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_sb_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_time_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_time_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/osal/src/os/inc/common_types.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_resourceid_typedef.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/resourceid/option_inc/cfe_resourceid_simple.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_filedef.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_filedef.h",
+    "/home/ubuntu/targets/cFS/tools/elf2cfetbl/elf2cfetbl_version.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.c"
+args = [
+    "-D_XOPEN_SOURCE=600",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/core_api/fsw/inc",
+    "-I/home/ubuntu/targets/cFS/osal/src/os/inc",
+    "-I/home/ubuntu/targets/cFS/psp/fsw/inc",
+]
+depends = [
+    "/home/ubuntu/targets/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.c",
+    "/home/ubuntu/targets/cFS/tools/cFS-GroundSystem/Subsystems/cmdUtil/SendUdp.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.c"
+args = [
+    "-D_XOPEN_SOURCE=600",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool/../fsw/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool",
+]
+depends = [
+    "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.c",
+    "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_configid_offset.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/config/fsw/inc/cfe_config_nametable.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/cFS/build/src/cfe_configid_nametable.c"
+args = [
+    "-D_XOPEN_SOURCE=600",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool/../fsw/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool",
+]
+depends = [
+    "/home/ubuntu/targets/cFS/build/src/cfe_configid_nametable.c",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_configid_offset.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/config/fsw/inc/cfe_config_nametable.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/cFS/build/src/cfe_platform_list.c"
+args = [
+    "-D_XOPEN_SOURCE=600",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool/../fsw/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/config/tool",
+]
+depends = [
+    "/home/ubuntu/targets/cFS/build/src/cfe_platform_list.c",
+    "/home/ubuntu/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_tool.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_configid_offset.h",
+]
+
+[[files]]
+source = "/home/ubuntu/targets/cFS/tools/tblCRCTool/cfe_ts_crc.c"
+args = [
+    "-D_XOPEN_SOURCE=600",
+    "-I/home/ubuntu/targets/cFS/build/inc",
+    "-I/home/ubuntu/targets/cFS/cfe/modules/core_api/fsw/inc",
+    "-I/home/ubuntu/targets/cFS/osal/src/os/inc",
+    "-I/home/ubuntu/targets/cFS/psp/fsw/inc",
+    "-I/src/inc",
+]
+depends = [
+    "/home/ubuntu/targets/cFS/tools/tblCRCTool/cfe_ts_crc.c",
+    "/home/ubuntu/targets/cFS/tools/tblCRCTool/cfe_ts_crc_version.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_api/fsw/inc/cfe_version.h",
+    "/home/ubuntu/targets/cFS/osal/src/os/inc/common_types.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_api/config/default_cfe_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_core_api_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/core_api/config/default_cfe_core_api_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_evs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_evs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/evs/config/default_cfe_evs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_sb_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_sb_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/sb/config/default_cfe_sb_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_time_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_time_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/time/config/default_cfe_time_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_mission_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_interface_cfg.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_fs_filedef.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/fs/config/default_cfe_fs_filedef.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_tbl_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/tbl/config/default_cfe_tbl_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_es_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/es/config/default_cfe_es_extern_typedefs.h",
+    "/home/ubuntu/targets/cFS/build/inc/cfe_resourceid_typedef.h",
+    "/home/ubuntu/targets/cFS/cfe/modules/resourceid/option_inc/cfe_resourceid_simple.h",
 ]
