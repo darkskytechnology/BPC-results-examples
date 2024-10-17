@@ -4,7 +4,8 @@ https://github.com/isc-projects/bind9
 
 # Project build steps
 
-```autoreconf -fi
+```
+autoreconf -fi
 sudo apt install liburcu-dev libuv1-dev libcap-dev
 bpc-translate generate-replacement --ignore --cc-override $(pwd)/bpc-gcc $(pwd)/bind9.toml /usr/bin/gcc $(pwd) -- ./configure --disable-doh
 make
