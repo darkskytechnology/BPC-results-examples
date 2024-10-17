@@ -18,7 +18,7 @@ bpc-translate generate-replacement --cc-override $(pwd)/bpc-gcc $(pwd)/cFS.toml 
 # Translation steps
 
 ```
-time ./bpc-translate translate -m /tmp/lifted -o /tmp/cFS -a /tmp/cFS-artifacts.zip  --model openai /home/coder/Documents/GitHub/cFS
+bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translations/cFS -a /home/ubuntu/artifacts/cFS-artifacts.zip --model openai /home/ubuntu/targets/cFS/cFS.toml
 ```
 
 # Results analysis and suggestions
