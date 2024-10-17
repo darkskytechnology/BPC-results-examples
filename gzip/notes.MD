@@ -123,5 +123,70 @@ done
 
 echo "Broken symlink repair and renaming complete."
 ```
+Seem to hit a block with us incorrectly generating a module:
 
+```
+2024-10-17T02:13:40.727201Z  INFO main bpc_translate: error[E0761]: file for module `lib` found at both "src/lib.rs" and "src/lib/mod.rs"
+  --> src/lib.rs:17:1
+   |
+17 | pub mod lib;
+   | ^^^^^^^^^^^^
+   |
+   = help: delete or rename one of them to remove the ambiguity
+
+
+2024-10-17T02:13:40.727237Z  INFO main bpc_translate: warning: found module declaration for lib.rs
+  --> src/lib.rs:17:1
+   |
+17 | pub mod lib;
+   | ^^^^^^^^^^^^
+   |
+   = note: lib.rs is the root of this crate's library target
+   = help: to refer to it from other targets, use the library's name as the path
+   = note: `#[warn(special_module_name)]` on by default
+
+
+2024-10-17T02:13:40.727254Z  INFO main bpc_translate: error: aborting due to 1 previous error; 1 warning emitted
+
+
+2024-10-17T02:13:40.727264Z  INFO main bpc_translate: For more information about this error, try `rustc --explain E0761`.
+
+2024-10-17T02:13:40.727270Z  INFO main bpc_translate: failed to build crate gzip at /home/ubuntu/translations/gzip
+2024-10-17T02:13:40.783673Z  INFO main bpc_translate: Initializing a new git repository in `/home/ubuntu/translations/gzip`
+2024-10-17T02:13:40.788073Z  INFO main bpc_translate: Setting local git user name and email in `/home/ubuntu/translations/gzip`
+2024-10-17T02:13:40.791516Z  INFO main bpc_translate: Adding all files to git repository in `/home/ubuntu/translations/gzip`
+2024-10-17T02:13:40.797820Z  INFO main bpc_translate: Creating initial commit in git repository in `/home/ubuntu/translations/gzip`
+2024-10-17T02:13:40.808059Z  INFO main bpc_translate: Tagging initial commit with 'Initial first pass translation results' in `/home/ubuntu/translations/gzip`
+2024-10-17T02:13:40.809603Z  INFO main bpc_translate: Refactoring gzip using model OpenAI
+2024-10-17T02:13:40.851321Z  INFO main bpc_translate: Refactoring Attempt 1 to gather errors and refactor functions
+2024-10-17T02:13:41.006583Z  INFO main bpc_translate: Error message: error[E0761]: file for module `lib` found at both "src/lib.rs" and "src/lib/mod.rs"
+  --> src/lib.rs:17:1
+   |
+17 | pub mod lib;
+   | ^^^^^^^^^^^^
+   |
+   = help: delete or rename one of them to remove the ambiguity
+
+
+2024-10-17T02:13:41.006616Z  INFO main bpc_translate: Processing file: src/lib.rs, line number: 17
+2024-10-17T02:13:41.006623Z  INFO main bpc_translate: Mapping function ranges for file: /home/ubuntu/translations/gzip/src/lib.rs
+2024-10-17T02:13:41.006642Z  INFO main bpc_translate: Mapping function ranges in file: /home/ubuntu/translations/gzip/src/lib.rs
+2024-10-17T02:13:41.007107Z  WARN main bpc_translate: No functions detected in file: /home/ubuntu/translations/gzip/src/lib.rs
+2024-10-17T02:13:41.007132Z  INFO main bpc_translate: Function ranges mapped for file: /home/ubuntu/translations/gzip/src/lib.rs
+2024-10-17T02:13:41.007139Z  WARN main bpc_translate: No matching function found for error at line 17
+2024-10-17T02:13:41.007167Z  INFO main bpc_translate: Error message: warning: found module declaration for lib.rs
+  --> src/lib.rs:17:1
+   |
+17 | pub mod lib;
+   | ^^^^^^^^^^^^
+   |
+   = note: lib.rs is the root of this crate's library target
+   = help: to refer to it from other targets, use the library's name as the path
+   = note: `#[warn(special_module_name)]` on by default
+
+
+2024-10-17T02:13:41.007182Z  INFO main bpc_translate: Processing file: src/lib.rs, line number: 17
+2024-10-17T02:13:41.007210Z  WARN main bpc_translate: No matching function found for error at line 17
+2024-10-17T02:13:41.007232Z  INFO main bpc_translate: Error message: error: aborting due to 1 previous error; 1 warning emitted
+```
 
