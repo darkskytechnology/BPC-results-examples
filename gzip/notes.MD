@@ -190,3 +190,5 @@ Seem to hit a block with us incorrectly generating a module:
 2024-10-17T02:13:41.007232Z  INFO main bpc_translate: Error message: error: aborting due to 1 previous error; 1 warning emitted
 ```
 
+The gzip target has two directories named `lib`. Next, trying to manually rename those to `rename_lib`: `sed -i 's/lib/rename_lib/g' gzip.toml`.
+
