@@ -23,7 +23,60 @@ bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translati
 
 # Results analysis and suggestions
 
-details coming soon
+The directory `i686-linux-gnu` needed to be manually renamed to `i686_linux_gnu`. After that, we fail to process this declaration in `cFS/cfe/modules/config/tools` (likely because of the terminating entry?)
 
+```
+CFE_ConfigTool_DetailEntry_t MAP_ENTRY_LIST[] = {
+    {
+        .render_style = CFE_ConfigTool_RenderStyle_ARRAY,
+        .ido          = CFE_ConfigIdOffset_PLATFORM_TBL_VALID_SCID,
+        .u.list =
+            {
+                .prefix      = "CFE_PLATFORM_TBL_VALID_SCID",
+                .type_name   = "uint32_t",
+                .num_entries = CFE_PLATFORM_TBL_VALID_SCID_COUNT,
+            },
+    },
+    {
+        .render_style = CFE_ConfigTool_RenderStyle_ARRAY,
+        .ido          = CFE_ConfigIdOffset_PLATFORM_TBL_VALID_PRID,
+        .u.list =
+            {
+                .prefix      = "CFE_PLATFORM_TBL_VALID_PRID",
+                .type_name   = "uint32_t",
+                .num_entries = CFE_PLATFORM_TBL_VALID_PRID_COUNT,
+            },
+    },
+    {
+        .render_style = CFE_ConfigTool_RenderStyle_ARRAY,
+        .ido          = CFE_ConfigIdOffset_PLATFORM_ES_MEM_BLOCK_SIZE,
+        .u.list       = {.prefix      = "CFE_PLATFORM_ES_MEM_BLOCK_SIZE",
+                   .type_name   = "size_t",
+                   .num_entries = CFE_PLATFORM_ES_POOL_MAX_BUCKETS,
+                   .custom_max  = "CFE_PLATFORM_ES_MAX_BLOCK_SIZE",
+                   .options     = CFE_CONFIGTOOL_LIST_DESCENDING | CFE_CONFIGTOOL_USE_LEADING_ZERO},
+    },
+    {
+        .render_style = CFE_ConfigTool_RenderStyle_ARRAY,
+        .ido          = CFE_ConfigIdOffset_PLATFORM_ES_CDS_MEM_BLOCK_SIZE,
+        .u.list       = {.prefix      = "CFE_PLATFORM_ES_CDS_MEM_BLOCK_SIZE",
+                   .type_name   = "size_t",
+                   .num_entries = CFE_PLATFORM_ES_POOL_MAX_BUCKETS,
+                   .custom_max  = "CFE_PLATFORM_ES_CDS_MAX_BLOCK_SIZE",
+                   .options     = CFE_CONFIGTOOL_LIST_DESCENDING | CFE_CONFIGTOOL_USE_LEADING_ZERO},
+    },
+    {
+        .render_style = CFE_ConfigTool_RenderStyle_ARRAY,
+        .ido          = CFE_ConfigIdOffset_PLATFORM_SB_MEM_BLOCK_SIZE,
+        .u.list       = {.prefix      = "CFE_PLATFORM_SB_MEM_BLOCK_SIZE",
+                   .type_name   = "size_t",
+                   .num_entries = CFE_PLATFORM_SB_POOL_MAX_BUCKETS,
+                   .custom_max  = "CFE_PLATFORM_SB_MAX_BLOCK_SIZE",
+                   .options     = CFE_CONFIGTOOL_LIST_DESCENDING | CFE_CONFIGTOOL_USE_LEADING_ZERO},
+    },
+
+    {0} /* Keep this last */
+};
+```
 
 
