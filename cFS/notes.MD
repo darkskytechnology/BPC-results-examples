@@ -79,7 +79,6 @@ CFE_ConfigTool_DetailEntry_t MAP_ENTRY_LIST[] = {
 };
 ```
 
-```
 `/targets/cFS/cfe/modules/config/tool/cfeconfig_platformdata_table.c` is the original source.
 
 We come up with:
