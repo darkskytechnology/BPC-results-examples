@@ -2,6 +2,10 @@
 
 https://github.com/nasa/cFS
 
+# Translation Attempt (with debugging enabled)
+
+https://bpc-results-examples.s3.amazonaws.com/cFS.mov
+
 # Project build steps
 
 ```
