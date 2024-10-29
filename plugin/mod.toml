@@ -1,0 +1,17 @@
+root = "/home/ubuntu/targets/apache-module-samples/helloworld"
+compiler = "/usr/bin/apxs"
+ignores = []
+
+[[files]]
+source = "/home/ubuntu/targets/apache-module-samples/helloworld/mod_helloworld.c"
+args = [
+    "-DLINUX",
+    "-D_REENTRANT", 
+    "-D_GNU_SOURCE",   
+    "-I/usr/include/apache2",  
+    "-I/usr/include/apr-1.0", 
+    "-I/usr/include",
+]
+depends = [
+    "/home/ubuntu/targets/apache-module-samples/helloworld/mod_helloworld.c"
+]
