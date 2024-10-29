@@ -23,7 +23,7 @@ bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translati
 
 # Results analysis and suggestions
 
-Bulletproof code does not support shared library compilation. To translate we need to mimic plugin API hooks.
+Two problems were encounted. First, `apxs` is used for compilation instead of `gcc`. This required manual edits to to the project file because the build process is not captured in its entirety. Second, Bulletproof code does not yet support shared library compilation. To translate we needed to mimic plugin API hooks and build an executable.
 
 ```
 #include <stdio.h>
@@ -88,6 +88,16 @@ int main() {
     
     return 0;
 }
+```
+
+after this the translation presents no errors or warnings
+
+```
+ubuntu@ip-172-31-30-205:~/translations/mod$ ls
+Cargo.lock  Cargo.toml  bpc_refactor_tests  src  target
+ubuntu@ip-172-31-30-205:~/translations/mod$ cargo build
+   Compiling mod v0.1.0 (/home/ubuntu/translations/mod)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
 ```
 
 
