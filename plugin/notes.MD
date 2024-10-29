@@ -1,94 +1,92 @@
 # Project source
 
-https://github.com/apache/trafficserver.git
+https://github.com/seratch/apache-module-samples/blob/master/helloworld/mod_helloworld.c
 
 # Project build steps
 
 ```
-autoreconf -fi
-sudo apt install liburcu-dev libuv1-dev libcap-dev
-bpc-translate generate-replacement --ignore --cc-override $(pwd)/bpc-gcc $(pwd)/bind9.toml /usr/bin/gcc $(pwd) -- ./configure --disable-doh
-make
+sudo apt install apache2 apache2-dev
+s/include /usr/share/httpd/build/special.mk with include /usr/share/apache2/build/config_vars.mk in the Makefile
+bpc-translate generate-replacement --ignore --cc-override $(pwd)/bpc-apxs $(pwd)/mod.toml /usr/bin/apxs $(pwd) -- make
 ```
 
 ## Build file
 
-[bind9.toml](bind9.toml)
+[mod.toml](mod.toml)
 
 
 # Translation steps
 
 ```
-bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translations/bind9 -a /home/ubuntu/artifacts/bind9-artifacts.zip --model openai /home/ubuntu/targets/bind9/bind9.toml 
+bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translations/mod -a /home/ubuntu/artifacts/mod.zip --model openai /home/ubuntu/targets/apache-module-samples/helloworld/mod.toml
 ```
 
 # Results analysis and suggestions
 
-To translate we need to first add mocked plugin API hooks.
+Bulletproof code does not support shared library compilation. To translate we need to mimic plugin API hooks.
 
 ```
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-// Mocked Traffic Server structures and functions for testing
+// Include necessary Apache headers for compatibility
+#include "httpd.h"
+#include "http_config.h"
+#include "http_protocol.h"
+#include "ap_config.h"
+#include "apr_tables.h"
+
+// Mocking request_rec struct and Apache functions for testing
+
+// Define a minimal mock request_rec struct for testing
 typedef struct {
-  int lookup_status;
-} MockTSHttpTxn;
+    const char *handler;
+    int header_only;
+    apr_table_t *headers_out;
+    const char *content_type;
+} mock_request_rec;
 
-typedef struct {
-  const char *data;
-} MockTSCont;
-
-void TSError(const char *fmt, ...) {
-  va_list args;
-  va_start(args, fmt);
-  vfprintf(stderr, fmt, args);
-  va_end(args);
+// Mock the ap_rputs function (sends output to the client in the actual Apache module)
+int ap_rputs(const char *str, mock_request_rec *req) {
+    printf("%s", str);  // Print to console for testing
+    return 0;
 }
 
-void TSDebug(const char *tag, const char *fmt, ...) {
-  va_list args;
-  va_start(args, fmt);
-  vfprintf(stdout, fmt, args);
-  va_end(args);
+// Mock the apr_table_set function to set headers
+void apr_table_set(apr_table_t *table, const char *key, const char *val) {
+    printf("Header set: %s: %s\n", key, val);  // Print headers to console for testing
 }
 
-const char* TSstrdup(const char* s) {
-  return strdup(s);
+// Updated helloworld_handler to take mock_request_rec
+static int helloworld_handler(mock_request_rec *req) {
+    if (strcmp(req->handler, "helloworld")) {
+        return DECLINED;
+    }
+    if (!req->header_only) {
+        ap_rputs("{\"message\": \"Hello world!\"}\n", req);
+    }
+    req->content_type = "application/json;charset=UTF-8";
+    apr_table_set(req->headers_out, "X-Content-Type-Options", "nosniff");
+
+    return OK;
 }
 
-// Mock functions to simulate Traffic Server environment
-int TSHttpTxnCacheLookupStatusGet(MockTSHttpTxn *txn, int *lookup_status) {
-  *lookup_status = txn->lookup_status;
-  return 1;  // Return success
-}
+// Main function for testing
+int main() {
+    // Initialize a mock request_rec
+    mock_request_rec req;
+    req.handler = "helloworld";
+    req.header_only = 0;
+    req.headers_out = apr_table_make(NULL, 5);  // Using NULL pool for simplicity
 
-int TSHttpTxnClientRespGet(MockTSHttpTxn *txn, void **res_bufp, void **res_loc) {
-  *res_bufp = NULL; // Not used in our mock environment
-  *res_loc = NULL;
-  return 1;  // Return success
-}
+    // Call the handler
+    int result = helloworld_handler(&req);
 
-// Testing main function
-int main(int argc, const char *argv[]) {
-  const char *header_name = (argc > 1) ? argv[1] : DEFAULT_HEADER_NAME;
-  MockTSCont mock_cont;
-  MockTSHttpTxn mock_txn;
-
-  mock_cont.data = header_name;
-  
-  // Test cases for different lookup statuses
-  int test_statuses[] = { TS_CACHE_LOOKUP_MISS, TS_CACHE_LOOKUP_HIT_STALE, TS_CACHE_LOOKUP_HIT_FRESH, TS_CACHE_LOOKUP_SKIPPED };
-  const char *test_status_names[] = { "MISS", "HIT_STALE", "HIT_FRESH", "SKIPPED" };
-
-  for (int i = 0; i < 4; i++) {
-    printf("\nTest Case %d: Cache Lookup Status = %s\n", i + 1, test_status_names[i]);
-    mock_txn.lookup_status = test_statuses[i];
-    add_cache_lookup_status_header((TSHttpTxn)&mock_txn, (TSCont)&mock_cont);
-  }
-
-  return 0;
+    // Output the result
+    printf("Handler result: %s\n", result == OK ? "OK" : "DECLINED");
+    printf("Content-Type: %s\n", req.content_type);
+    
+    return 0;
 }
 ```
 
