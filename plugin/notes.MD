@@ -1,6 +1,6 @@
 # Project source
 
-https://github.com/isc-projects/bind9
+https://github.com/apache/trafficserver.git
 
 # Project build steps
 
