@@ -39,4 +39,4 @@ Currently, the refactoring artifacts are tracked in the Git log within the trans
 
 ---
 
-Reach out to sandy@darkskytechnology.com if you have questions. This is a work in progress and I'll be adding all the rest of the benchmark projects as I get them processed.
+Reach out to sandy@darkskytechnology.com if you have questions. 
