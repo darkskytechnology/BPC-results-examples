@@ -21,7 +21,7 @@ bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translati
 
 # Results analysis and suggestions
 
-We are failing pretty hard on this because of the .h file being used by everything. In particular, our biggest issue is [here](https://github.com/yaml/libyaml/blob/840b65c40675e2d06bf40405ad3f12dec7f35923/include/yaml.h#L1790C1-L1790C18). 
+We are failing hard on this because of the .h file being used by everything. In particular, we are unable to translate [this](https://github.com/yaml/libyaml/blob/840b65c40675e2d06bf40405ad3f12dec7f35923/include/yaml.h#L1790C1-L1790C18). 
 
 
 
