@@ -35,7 +35,7 @@ error: expected one of `;` or `{`, found `-`
 
 ```
 
-I've opened an issue for this in BPC. However, for now, I am just going to use a simple work-around using a script to rename these files (there are hundreds) and fix up all their references (there are thousands).
+I've opened an issue for this. However, for now, I am just going to use a simple work-around using a script to rename these files (there are hundreds) and fix up all their references (there are thousands).
 
 ```
 #!/bin/bash
@@ -124,7 +124,7 @@ done
 echo "Broken symlink repair and renaming complete."
 ```
 
-Next, issue is we encounter confusion over the directory named lib and the crate lib produced by Bulletproof Code.
+Next, we encounter confusion over the directory named lib and the crate lib produced by Bulletproof Code.
 
 ```
 2024-10-17T02:13:40.727201Z  INFO main bpc_translate: error[E0761]: file for module `lib` found at both "src/lib.rs" and "src/lib/mod.rs"
