@@ -123,7 +123,8 @@ done
 
 echo "Broken symlink repair and renaming complete."
 ```
-Seem to hit a block with us incorrectly generating a module:
+
+Next, issue is we encounter confusion over the directory named lib and the crate lib produced by Bulletproof Code.
 
 ```
 2024-10-17T02:13:40.727201Z  INFO main bpc_translate: error[E0761]: file for module `lib` found at both "src/lib.rs" and "src/lib/mod.rs"
@@ -190,5 +191,5 @@ Seem to hit a block with us incorrectly generating a module:
 2024-10-17T02:13:41.007232Z  INFO main bpc_translate: Error message: error: aborting due to 1 previous error; 1 warning emitted
 ```
 
-The gzip target has two directories named `lib`. Next, trying to manually rename those to `rename_lib`: `sed -i 's/lib/rename_lib/g' gzip.toml`.
+After manually rename those to `rename_lib`: `sed -i 's/lib/rename_lib/g' gzip.toml` we succeed for a bit until we encounter the use of `static` function declarations, but we have not built into any of our system yet.
 
