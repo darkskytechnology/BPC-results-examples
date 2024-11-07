@@ -159,7 +159,7 @@ let map_entry_list = [
 ]; 
 ```
 
-After performing manual renaming translation continued following renaming but stopped after failing to process global declaration of MAP_ENTRY_LIST. Later failure due to extensive use of global variables.
+Translation continued but stopped after failing to process global declaration of MAP_ENTRY_LIST (any other extensive use of global variables).
 
 ```
 error: expected item, found keyword `let`
