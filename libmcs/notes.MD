@@ -23,6 +23,5 @@ bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translati
 
 Proper preprocessor directive handling; Most files appear to be good translations up to bitfields, global context, rewriting of comma-separated declarations and field declarations.
 
-[libmcs-rust.tgz](libmcs-rust.tgz)
 
 
