@@ -24,7 +24,6 @@ bpc-translate translate -m /home/ubuntu/tractor/lifted -o /home/ubuntu/translati
 
 # Results analysis and suggestions
 
-coming soon
-
+Failed to produce code structure due to confusion over directory named lib and crate lib produced by Bulletproof Code. Translation proceeded following manual renaming but failed frequently due to missing global context and missing training data. Best results were observed for single targets within /bin/tools.  
 
 
