@@ -159,7 +159,8 @@ let map_entry_list = [
 ]; 
 ```
 
-which causes:
+After performing manual renaming translation continued following renaming but stopped after failing to process global declaration of MAP_ENTRY_LIST. Later failure due to extensive use of global variables.
+
 ```
 error: expected item, found keyword `let`
   --> /home/ubuntu/translations/cFS_reduced/src/cfe/modules/config/tool/cfeconfig_platformdata_table_c.rs:75:1
@@ -167,7 +168,6 @@ error: expected item, found keyword `let`
 75 | let map_entry_list = [
    | ^^^ consider using `const` or `static` instead of `let` for global variables
 ```
-
 
 
 
